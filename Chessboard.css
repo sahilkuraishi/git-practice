@@ -1,0 +1,78 @@
+body{
+    background-color: black;
+}
+
+.chessboard{
+    display: grid;
+    grid-template-columns: 80px 80px 80px 80px 80px 80px 80px 80px;
+    grid-template-rows: 80px 80px 80px 80px 80px 80px 80px 80px;
+    height: auto;
+    width: 640px;
+    justify-content: space-around;
+    margin: 0px auto 0px auto;
+}
+
+.box{
+    background-color: rgb(63, 63, 63);
+    border: solid 1px rebeccapurple;
+}
+
+.col{
+    background-color: rgb(184, 184, 184);
+}
+
+.height{
+    font-size: 50px;
+    padding: 15px;
+    color: black;
+}
+
+
+.height1{
+    font-size: 50px;
+    padding: 15px;
+    color: rgb(255, 255, 255);
+}
+
+.play{
+    position: absolute;
+    color: rgb(232, 230, 230);
+    font-size: 50px;
+    top: 200px;
+    left: 80px;
+    text-align: center;
+}
+
+.play-color{
+    color: indianred;
+}
+
+.play1{
+    position: absolute;
+    color: rgb(232, 230, 230);
+    font-size: 50px;
+    right: 80px;
+    top: 200px;
+    text-align: right;
+}
+
+.play-color1{
+    color: indianred;
+}
+
+@media screen and (max-width: 500px){
+    .box{
+        grid-template-columns: 50px 50px 50px 50px 50px 50px 50px 50px;
+        grid-template-rows: 50px 50px 50px 50px 50px 50px 50px 50px;
+    }
+
+    .play{
+        position: relative;
+        top: 0px;
+    }
+    .play1{
+        position: relative;
+        top: -10px;
+    }
+
+}
